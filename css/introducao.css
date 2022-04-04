@@ -21,8 +21,54 @@
     height: 100px;
     background: url('../img/detalhe.svg') no-repeat center;
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 350px;
     z-index: -1;
-    
+}
+
+.introducao img{
+    border-radius: 14px;
+}
+
+@media (max-width: 800px) {
+    .introducao img{
+        grid-row: 1;
+        grid-column: 1 / -1;
+        justify-self: center;
+        
+    }
+    .introducao div{
+        grid-row: 2;
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .introducao h1::after {
+        content: "";
+        display: block;
+        width: 130px;
+        height: 100px;
+        background: url('../img/detalhe.svg') no-repeat center;
+        position: absolute;
+        top: 550px;
+        left: 70px;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 400px) {
+    .introducao h1  {
+      font-size: 2.5rem;
+    }
+    .introducao h1::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 90px;
+        background: url('../img/detalhe.svg') no-repeat center;
+        position: absolute;
+        top: 560px;
+        left: -10px;
+        z-index: -1;
+    }
 }
