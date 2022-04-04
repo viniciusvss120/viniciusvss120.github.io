@@ -13,3 +13,16 @@
     line-height: 1.125;
     margin-bottom: 30px;
 }
+
+.introducao h1::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url('../img/detalhe.svg') no-repeat center;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    z-index: -1;
+    
+}
